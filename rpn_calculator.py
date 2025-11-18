@@ -14,7 +14,8 @@ class RPNCalculator:
             '+': {'precedence': 1, 'associativity': 'left', 'function': operator.add},
             '-': {'precedence': 1, 'associativity': 'left', 'function': operator.sub},
             '*': {'precedence': 2, 'associativity': 'left', 'function': operator.mul},
-            '/': {'precedence': 2, 'associativity': 'left', 'function': operator.truediv}, '^': {'precedence': 3, 'associativity': 'right', 'function': operator.pow}
+            '/': {'precedence': 2, 'associativity': 'left', 'function': operator.truediv},
+            '^': {'precedence': 3, 'associativity': 'right', 'function': operator.pow}
         }
 
     def tokenize(self, expression: str) -> list:
