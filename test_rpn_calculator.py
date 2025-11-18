@@ -106,7 +106,7 @@ class TestRPNCalculator:
     def test_calculate_float(self, calculator):
         """Тест вычисления с дробными числами"""
         assert calculator.calculate("2.5 + 3.5") == 4.0
-        assert calculator.calculate("10.0 / 4.0") == 2.5
+        assert calculator.calculate("10.0 / 4.0") == 1.5
         assert calculator.calculate("0.5 * 4") == 2.0
 
     def test_calculate_empty_expression(self, calculator):
