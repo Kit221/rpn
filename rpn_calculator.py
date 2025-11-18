@@ -69,7 +69,7 @@ class RPNCalculator:
             elif token in self.operators:
                 while (operator_stack and
                        operator_stack[-1] != '(' and
-                       self._should_pop_operator(token, operator_stack[0])):
+                       self._should_pop_operator(token, operator_stack[-1])):
                     output.append(operator_stack.pop())
                 operator_stack.append(token)
             elif token == '(':

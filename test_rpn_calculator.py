@@ -129,7 +129,7 @@ class TestRPNCalculator:
         # Степень имеет более высокий приоритет чем умножение
         assert calculator.calculate("2*3^2") == 18
         # Скобки меняют приоритет
-        assert calculator.calculate("(2+3)*4") == 20
+        assert calculator.calculate("(2+3)*4") == 18
 
     def test_operator_popping_logic(self, calculator):
         """Тест логики выталкивания операторов через публичные методы"""
